@@ -258,7 +258,7 @@ while [ $ELAPSED -lt $MAX_WAIT ]; do
         break
     fi
     log "等待 Android 系统启动... ($ELAPSED/$MAX_WAIT 秒)"
-    sleep 1
+    sleep 3
     ELAPSED=$((ELAPSED + 1))
 done
 
