@@ -65,7 +65,7 @@ jobs:
 
           # 生成版本代码（比如 v4.1.10 -> 4110）
           VERSION_NUM=$(echo "$VERSION" | tr -d 'v')
-          VERSION_CODE=$(echo "$VERSION_NUM" | awk -F. '{printf "%d%02d%02d\n", $1, $2, $3}')
+          VERSION_CODE=$(echo "$VERSION_NUM" | awk -F. '{print $1 * 1000 + $2 * 100 + $3}')
 
           # 提取下载链接
           ARM_URL=$(echo "$BODY" | grep '"browser_download_url":' | grep 'openlist-android-arm.tar.gz' | sed -E 's/.*"([^"]+)".*/\1/')
