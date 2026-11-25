@@ -20,11 +20,6 @@ OpenList Magisk 模块将 [OpenList](https://github.com/OpenListTeam/OpenList) �
 - **智能网络适配**：自动识别 WiFi 和移动网络 IP
 - **日志支持**：详细的运行日志记录
 
-## 截图展示
-
-| 安装界面 | KernelSU WiFi 网络 | KernelSU 移动网络 |
-|---------|------------------|------------------|
-| ![安装界面](install-interface.jpg) | ![KernelSU WiFi 网络](kernelsu-wifi.jpg) | ![KernelSU 移动网络](kernelsu-mobile-network.jpg) |
 
 ## 系统要求
 
@@ -120,18 +115,10 @@ OpenList Magisk 模块将 [OpenList](https://github.com/OpenListTeam/OpenList) �
 - 查看日志：`cat /data/adb/modules/openlist/service.log`
 
 ## 更新说明
+- 主要是更新上游二进制文件
 - 支持通过 Magisk/KernelSU/APatch 更新检查
 - 更新不会清除现有数据
 - 可在安装时重新选择配置选项
-
-## 更新日志
-
-### v4.1.10 (2026-02-22)
-- **修复** versionCode 计算逻辑，支持三位版本号 (v4.1.10 → 4110)
-- **修复** 安装脚本占位符替换问题
-- **修复** sed 替换时变量被错误展开的问题
-- **优化** action.sh 启停服务的输出提示信息
-- **改进** 移除冗余的占位符验证逻辑
 
 ## 数据迁移说明
 1. 在安装时选择新的数据目录
@@ -140,7 +127,7 @@ OpenList Magisk 模块将 [OpenList](https://github.com/OpenListTeam/OpenList) �
 
 ## 贡献
 - 欢迎提交 Issue 和 Pull Request
-- 问题反馈：[GitHub Issues](https://github.com/Alien-Et/OpenList-Magisk/issues)
+- 感谢Alien-Et
 
 ## 许可证
 本项目基于 [MIT 许可证](LICENSE) 发布。
