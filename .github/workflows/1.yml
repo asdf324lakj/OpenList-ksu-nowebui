@@ -2,7 +2,7 @@ name: 构建 OpenList Magisk 模块
 
 on:
   schedule:
-    - cron: '0 */4 * * *'  # 每4小时运行一次
+    - cron: '0 */24 * * *'  # 每24小时运行一次
   workflow_dispatch:  # 支持手动触发
   push:
     branches:
