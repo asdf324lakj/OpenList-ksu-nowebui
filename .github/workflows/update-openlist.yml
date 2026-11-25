@@ -207,7 +207,7 @@ jobs:
               "version": "${{ env.OPENLIST_VERSION }}",
               "versionCode": ${{ env.OPENLIST_VERSION_CODE }},
               "zipUrl": "${{ github.server_url }}/${{ github.repository }}/releases/download/${{ env.OPENLIST_VERSION }}/openlist-magisk-${{ env.OPENLIST_VERSION }}.zip",
-              "changelog": "${{ github.server_url }}/${{ github.repository }}/raw/main/OpenList-Magisk/CHANGELOG.md"
+              "changelog": "${{ github.server_url }}/${{ github.repository }}/raw/nowebui/OpenList-Magisk/CHANGELOG.md"
           }
           EOF
 
@@ -229,7 +229,7 @@ jobs:
           git config user.email "actions@github.com"
           git add update.json OpenList-Magisk/module.prop OpenList-Magisk/CHANGELOG.md
           git commit -m "更新模块到 OpenList ${{ env.OPENLIST_VERSION }}" || echo "无更改需要提交"
-          git push origin main
+          git push origin nowebui
 
       # 打包模块
       - name: 打包模块
